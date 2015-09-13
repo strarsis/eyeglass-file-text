@@ -1,0 +1,20 @@
+{
+  "name": "eyeglass-filetext",
+  "version": "0.0.0",
+  "description": "Sass eyeglass module for getting the contents of a text file as string.",
+  "license": "MIT",
+  "repository": "strarsis/eyeglass-filetext",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/strarsis"
+  },
+  "files": [
+    "sass"
+  ],
+  "keywords": ["eyeglass-module", "sass"],
+  "main": "eyeglass-exports.js",
+  "dependencies": {
+    "eyeglass": "*"
+  }
+}
