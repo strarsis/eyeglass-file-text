@@ -1,0 +1,4 @@
+@function file-text($path, $encoding: 'utf8') {
+  @return 'test';
+  // @return _file-text($path, $encoding);
+}
