@@ -12,9 +12,15 @@
   "files": [
     "sass"
   ],
-  "keywords": ["eyeglass-module", "sass"],
+  "keywords": [
+    "eyeglass-module",
+    "sass"
+  ],
   "main": "eyeglass-exports.js",
   "dependencies": {
     "eyeglass": "*"
+  },
+  "devDependencies": {
+    "eyeglass-dev-testutils": "0.0.2"
   }
 }
