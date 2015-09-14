@@ -9,8 +9,8 @@ module.exports = function(eyeglass, sass) {
     // TODO: eyeglass assets?
     functions: {
       'file-text($path)': function(path, encoding: \'utf8\', done) {
-        fs.readFile(path.getValue(), encoding, function (err,data) {
-          if (err) return console.log(err); // TODO: sass error object?
+        fs.readFile(path.getValue(), encoding, function (err, data) {
+          if (err) throw new Error("File read error: \'" + err.toString() + "\'.");
           done(sass.types.String(data));
         });
       }
