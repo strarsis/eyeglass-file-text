@@ -22,7 +22,7 @@ var testFileSuccess = function(path, done) {
   testutils.assertCompiles(eg, expected, done);
 };
 
-var testFileFail = function(path, done) {
+var testFileFailEnc = function(path, done) {
   var input         = "@import 'file-text'; "+
                       "$test: file-text('" + path + "'); " +
                       ".test { text: #{$test}; }";
@@ -68,6 +68,19 @@ describe("loads into a variable", function () {
   });
 
   it("a non-existing file unsuccessfully with error", function (done) {
-    testFileFail("non-existing-file.txt", done);
+    var input         = "@import 'file-text'; "+
+                        "$test: file-text('./non-existing-file!!!.txt'); " +
+                        ".test { text: #{$test}; }";
+    var expectedError = "error in C function file-text: Error: : " +
+                        "''.\n\nBacktrace:\n\tstdin:1, in function `file-text`\n\tstdin:1";
+
+    var rootDir  = testutils.fixtureDirectory("app_assets");
+    var eg = new Eyeglass({
+      root: rootDir,
+      data: input
+    }, sass);
+    eg.assets.addSource(rootDir, {pattern: "text/**/*"});
+
+    testutils.assertCompilationError(eg, expectedError, done);
   });
 });
