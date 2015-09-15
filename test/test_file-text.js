@@ -61,10 +61,10 @@ describe("loads into a variable", function () {
   });
 
   it("a small binary (non-text) file unsuccessfully with error", function (done) {
-    testFileFail("binary/small/picture.jpg", done);
+    testFileFailEnc("binary/small/picture.jpg", done);
   });
   it("a large binary (non-text) file unsuccessfully with error", function (done) {
-    testFileFail("binary/large/picture.jpg", done);
+    testFileFailEnc("binary/large/picture.jpg", done);
   });
 
   it("a non-existing file unsuccessfully with error", function (done) {
