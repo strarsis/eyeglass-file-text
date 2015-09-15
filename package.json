@@ -25,6 +25,7 @@
     "content"
   ],
   "eyeglass": {
+    "needs": "^0.6.2",
     "name": "file-text",
     "exports": "eyeglass-exports.js"
   },
@@ -38,7 +39,7 @@
     "node-sass": "^3.3.2"
   },
   "dependencies": {
-    "eyeglass": "*"
+    "eyeglass": "^0.6.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
