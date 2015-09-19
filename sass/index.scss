@@ -1,3 +1,7 @@
 @function file-text($path, $encoding: 'utf8') {
   @return _file-text($path, $encoding);
 }
+
+@function file-binary($path) {
+  @return _file-text($path, 'base64');
+}
