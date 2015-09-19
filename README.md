@@ -1,6 +1,10 @@
 # eyeglass-file-text
 
-Sass eyeglass module for getting the contents of a text file as string.
+Sass eyeglass module for getting the contents of text or binary files as (encoded) string.
+
+
+New: Supports binary files now (encodes to base64).
+
 
 
 Installation
@@ -15,28 +19,37 @@ Usage
 ````
 @import 'file-text';
 
-$text: file-text('./loremipsum.txt');
+// Fetch text file:
+$text  : file-text('./loremipsum.txt');
     // encoding can be explicitly specified by 2nd argument
 
-// Variable can be then used as any sass variable:
-.test {
+// Fetch binary file:
+$base64: file-binary('./test.jpg');
+    // binary file content is represented as base64 text
+
+
+// The string can then be used as usual in sass:
+.test-text {
   content: $text;
+}
+
+.test-binary {
+  background: url("data:image/jpeg;base64,#{$base64}");
 }
 ````
 
 
 Arguments
 ---------
-### path
+### file-text
+#### path
 Path to the file.
 
-### encoding
+#### encoding
 Encoding of the file.
 Defaults to utf8.
 
 
-Binary files
-------------
-
-For binary file content in CSS, load and inline it with base64 encoded, 
-this module/function is only suited for text files.
+### file-binary
+#### path
+Path to the file.

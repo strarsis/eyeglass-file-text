@@ -1,7 +1,7 @@
 {
   "name": "eyeglass-file-text",
-  "description": "Sass eyeglass module for getting the contents of a text file as string",
-  "version": "0.0.5",
+  "description": "Sass eyeglass module for getting the contents of text or binary files as (encoded) string.",
+  "version": "0.0.6",
   "author": {
     "name": "strarsis",
     "email": "strarsis@gmail.com",
@@ -21,8 +21,15 @@
     "eyeglass-module",
     "file",
     "text",
+    "binary",
+    "base64",
+    "raster",
+    "image",
+    "svg",
+    "vector",
     "load",
-    "content"
+    "content",
+    "string"
   ],
   "eyeglass": {
     "needs": "^0.6.2",
