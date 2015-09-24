@@ -5,6 +5,8 @@ Sass eyeglass module for getting the contents of text or binary files as (encode
 
 New: Supports binary files now (encodes to base64).
 
+New: Normalizes line endings to prevent issues with quotes and later output of the string.
+
 
 
 Installation

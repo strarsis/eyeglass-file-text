@@ -1,7 +1,8 @@
 'use strict';
 
 var path = require('path'),
-      fs = require('fs');
+      fs = require('fs'),
+     eol = require('eol');
 
 module.exports = function(eyeglass, sass) {
   return {
@@ -11,7 +12,7 @@ module.exports = function(eyeglass, sass) {
       '_file-text($path, $encoding: \'utf8\')': function(path, encoding, done) {
         fs.readFile(path.getValue(), encoding.getValue(), function (err, data) {
           if (err) throw new Error("File read error: \'" + err.toString() + "\'.");
-          done(sass.types.String(data));
+          done(sass.types.String( eol.auto(data) ));
         });
       }
     }
