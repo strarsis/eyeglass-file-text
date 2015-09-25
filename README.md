@@ -2,6 +2,8 @@
 
 Sass eyeglass module for getting the contents of text or binary files as (encoded) string.
 
+[![NPM](https://nodei.co/npm/eyeglass-file-text.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/eyeglass-file-text/)
+
 
 New: Supports binary files now (encodes to base64).
 
