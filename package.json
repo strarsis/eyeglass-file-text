@@ -32,7 +32,7 @@
     "string"
   ],
   "eyeglass": {
-    "needs": "^0.6.2",
+    "needs": "^0.6.4",
     "name": "file-text",
     "exports": "eyeglass-exports.js"
   },
@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "eol": "^0.2.0",
-    "eyeglass": "^0.6.2"
+    "eyeglass": "^0.6.4"
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
