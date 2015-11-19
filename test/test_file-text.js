@@ -15,7 +15,8 @@ var testFileSuccess = function(path, done) {
   var rootDir  = testutils.fixtureDirectory("app_assets");
   var eg = new Eyeglass({
     root: rootDir,
-    data: input
+    data: input,
+    file: "./"
   }, sass);
   eg.assets.addSource(rootDir, {pattern: "text/**/*"});
 
