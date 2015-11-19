@@ -32,14 +32,14 @@
     "string"
   ],
   "eyeglass": {
-    "needs": "^0.6.4",
+    "needs": "^0.7.1",
     "name": "file-text",
     "exports": "eyeglass-exports.js"
   },
   "devDependencies": {
-    "eyeglass": "^0.6.4",
+    "eyeglass": "^0.7.1",
     "eyeglass-dev-eslint": "^2.0.0",
-    "eyeglass-dev-testutils": "0.0.5",
+    "eyeglass-dev-testutils": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
     "gulp-mocha": "^2.1.3",
