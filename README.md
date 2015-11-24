@@ -2,6 +2,8 @@
 
 Sass eyeglass module for getting the contents of text or binary files as (encoded) string.
 
+[![david](https://david-dm.org/strarsis/eyeglass-file-text.svg)](https://david-dm.org/strarsis/eyeglass-file-text)
+
 [![NPM](https://nodei.co/npm/eyeglass-file-text.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/eyeglass-file-text/)
 
 
