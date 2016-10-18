@@ -32,7 +32,7 @@
     "string"
   ],
   "eyeglass": {
-    "needs": "^0.8.0",
+    "needs": ">=0.8.0",
     "name": "file-text",
     "exports": "eyeglass-exports.js"
   },
